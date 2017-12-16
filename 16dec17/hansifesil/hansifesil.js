@@ -1,4 +1,4 @@
-var m = Number(prompt('Ayın daxil edin. (1-12)'));
+var m = Number(prompt('Ayı daxil edin. (1-12)'));
 
 if(m==12||m==1||m==2){    
     console.log('Daxil etdiyiniz ay qış ayıdır.');

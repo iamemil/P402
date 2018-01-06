@@ -1,0 +1,16 @@
+/* Red color configuration*/
+.redBorder{
+    border: 1px solid red;
+}
+.lightRed{
+    background-color: #974747;
+}
+.red{
+    background-color: #5e3030;
+}
+.darkestRed{
+    background-color: #522a2a;
+}
+.gray{
+    background-color: #414040;
+}

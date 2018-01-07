@@ -1,0 +1,258 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#mainWrapper{
+    width: 100%;
+}
+.clear{
+    clear: both;
+}
+/* Header STYLE */
+#header{
+    background-color: #2b2b2b;
+    height: 50px;    
+    padding: 0 160px;
+}
+/* Navigation section STYLE */
+#navbar{ 
+    float: left;   
+    width: 55%;
+    
+    margin-right: -3.1px;
+}
+#navbar  ul{
+    padding: 0;
+}
+#navbar ul li{
+    padding-left: 5px;
+    display: inline-block;
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: gray;
+}
+#navbar ul li a:hover{
+    text-decoration: none;
+    color: rgb(150, 150, 150);
+}
+/* User Authentication section STYLE */
+#userAuth{
+    text-align: right;
+    float: right;
+    width: 45%;      
+    margin-right: -3.1px; 
+}
+#userAuth #refer{
+    color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    margin-right: 10px;
+}
+#userAuth .signin{
+    display: inline-block;
+    margin-right: 10px;
+    background-color: gray;
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+#main{
+width: 80%;
+margin:0 auto;
+}
+/* Brand Row STYLE */
+#brandRow{
+    height: 80px;    
+}
+#brandRow h2{
+    padding-top: 6px;
+}
+#brandRow #brand{
+    width: calc(50% - 23.1px); 
+    height: 100%;
+    float: left;
+    margin-right: -3.1px; 
+    padding-left: 10px;
+}
+#brandRowAds{
+    background-color: gray; 
+    height: calc(100% - 4px);   
+    width: 50%; 
+    float: right;   
+    margin-right: -3.1px; 
+    border: 2px solid black;
+}
+/* MainBar STYLE */
+#mainbar{
+background-color: #a8a8a8;
+height: 50px;    
+width: 100%;
+display: inline-block;
+
+}
+#mainNav{
+    float: left;
+    width: 80%;    
+}
+#mainNav ul{
+    padding: 0;
+    margin: 0;
+}
+#mainNav ul li{ 
+    border-left: 1px solid gray;   
+    display: inline-block;
+    font-family: Courier, monospace;    
+    
+}
+#mainNav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    padding: 16px 10px;
+    display: inline-block;
+}
+#mainNav ul li a:hover{
+    text-decoration: none;
+    color: rgb(150, 150, 150);
+}
+#search{
+    float: right;
+    width: 19%;
+    text-align: right;
+    margin-top: 13px; 
+}
+#search a{    
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: gray;
+    border-radius: 15px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+/* content STYLE */
+#content{
+    margin-top: 20px;
+}
+#leftSide{
+    float: left;    
+    width: 65%;
+    
+}
+#slider{
+    height: 400px;
+    width: calc(100% - 20px);
+    margin-right: 20px;
+    background-color: rgb(90, 90, 90);
+}
+#latest{
+    width: 100%;
+}
+#rightSide{
+    float: right;
+    height: 950px;
+    width: 35%;
+}
+.productsRow{
+    margin: 20px 0px;
+    
+}
+.productsTab{      
+    height: 120px;
+    display: inline-block;
+    margin-right: 20px;    
+    border-radius: 5px;    
+    width: calc(33.33% - 23px);
+    background-color: gray;
+}
+#bigAds{
+    height: 400px;
+    width: 100%;
+    margin-right: 20px;
+    background-color: gray;
+}
+.smallAds{
+    height: 120px;
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    background-color: gray;
+}
+#twitter{
+    height: 380px;
+    display: inline-block;
+    margin-top: 20px;
+    width: 100%;
+    background-color: gray;
+}
+#latest{
+    margin-top: 20px;    
+}
+#other{
+   margin-top: 40px; 
+   padding: 10px; 
+   background-color: #d8d8d8;   
+}
+#latest h2,
+#other h2{   
+    padding-left:10px; 
+    text-transform: uppercase;
+}
+#latest p,
+#other p{
+    width: calc(100% - 20px);
+border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-top: -30px;
+}
+.otherTab{    
+    margin: 0px 20px;     
+    height: 120px;
+    display: inline-block;
+    margin-right: -3.1px;    
+    border-radius: 5px;    
+    width: calc(25% - 27px);
+    background-color: gray;
+}
+.productsTab:hover,
+.otherTab:hover{
+    transition-duration: 500ms;
+    box-shadow: 6px 6px 50px #0000003b;
+}
+#footer{
+    height: 70px;
+    background-color:#2b2b2b;
+    padding-top:10px;
+}
+#bottomLeft  ul{
+    float: left;
+    width: 60%;    
+}
+#bottomLeft ul li{
+    padding-left: 5px;
+    display: inline-block;
+}
+#bottomLeft ul li a{
+    text-decoration: none;
+    color: gray;
+}
+#bottomLeft ul li a:hover{
+    text-decoration: none;
+    color: rgb(150, 150, 150);
+}
+#bootomlogo{   
+    float: right;
+    width: 39%;      
+    margin-right: -3.1px; 
+}
+#bootomlogo h2{
+    float: right;
+    width: 39%;
+    margin-right: 10px;
+    background-color: gray;
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 5px 10px;
+    text-decoration: none;
+}

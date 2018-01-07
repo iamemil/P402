@@ -3,8 +3,7 @@ body{
 }
 #main{
     width:1200px;
-    margin: 0 auto;
-    background-color: #5e3030;
+    margin: 0 auto;    
 }
 #menu{
     width: 100%;
@@ -54,10 +53,25 @@ body{
     box-shadow: 6px 6px 50px #0000003b;
 }
 
-.heading{
-    padding: 0;
-    margin: 0;
-    display: inline-block;
+.tabWhen{
+    opacity: 0.9;
+    color: #ffffffe5;
+    width: 60px;
+    height: 80px;
+
+}
+.whenDate{
+    padding: 2px 15px;
+    background-color: #2980b9;
+    text-align: center;   
+    font-weight: bold;
+    border-top-left-radius: 10px;
+}
+.whenClock{
+    padding: 1px 10px;
+    background-color: #216b99;
+    text-align: center;
+    border-bottom-right-radius: 10px;
 }
 /* Footer style*/
 #footer{

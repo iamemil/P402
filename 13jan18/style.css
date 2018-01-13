@@ -37,3 +37,6 @@ li{
      width: calc(100% - 79px);
      display: inline-block;
 }
+.info p{
+    opacity: 0.8;
+}

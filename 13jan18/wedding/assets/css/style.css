@@ -1,0 +1,39 @@
+@font-face{
+    font-family: "Dancing";
+    src: url('../fonts/Dancing_in_the_Rainbow.woff');
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.card{
+    width: 650px;
+    height: 322px;
+    background-image: url('../img/bg.jpg');
+    margin: 10px 5px;
+    display: inline-block;
+}
+.card .card-text{
+    width: 80%;
+    padding-left: 10%;
+    color: #26a296;
+}
+.card .card-text h1{
+    font-family: "Dancing";
+    font-size: 50px;
+    padding-left: 22%;
+    padding-top: 4%;
+}
+.card .card-text .date{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    padding-left: 41%;
+    padding-top: 3%;
+}
+.card .card-text .text{
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;   
+    padding-top: 3%;
+    text-align: center;
+
+}

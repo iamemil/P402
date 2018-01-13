@@ -1,0 +1,39 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.main{
+    margin: 2% 20%;
+    padding: 0 auto;
+}
+h1{
+text-align: center;
+}
+h4,p{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.main-tabs{
+    width: 60%;
+    margin: 0 auto;    
+}
+li{
+    margin-bottom: 20px;
+    display: inline-block;
+    list-style: none;
+}
+.main-tabs i{  
+    display: inline-block;
+    height: 60px;
+    width: 60px;    
+    text-align: center;
+    line-height: 60px;
+    font-size: 50px;    
+    color: #cfcf70;
+    border: 2px solid #cfcf70;
+}
+.info{    
+    margin-left: 10px;
+     width: calc(100% - 79px);
+     display: inline-block;
+}

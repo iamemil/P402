@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body{
+    padding: 0;
+    margin: 0;
+    background: #212739;
+}
+#team{
+    width: 80%;
+    margin: 0 auto;
+}
+.rows{
+    list-style: none;
+}
+.rows li{
+position: relative;
+margin: 5px 10px;
+display: inline-block;
+width: calc(33% - 20px);
+text-decoration: none;
+}
+.rows li img{
+width: 100%;
+}
+.overlay{
+opacity: 0;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 98.5%;
+background: linear-gradient(to bottom, rgba(195, 55, 102, 0.7) 0%, rgba(29, 39, 113, 0.7) 100%);
+color: white;
+-webkit-transition: all 0.5s ease-in;
+-o-transition: all 0.5s ease-in;
+transition: all 0.5s ease-in;
+}
+.overlay-text{
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    background-color: white;
+}
+.overlay-text .name{
+    position: absolute;
+    bottom: 25px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #1d2871;
+}
+.overlay-text .position{
+    position: absolute;
+    bottom: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    color: #45bdf1;
+}
+
+.rows li:hover .overlay {
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+
+.overlay-social{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    list-style: none;
+}
+.overlay-social ul li{
+    width: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+.overlay-social ul li i{
+    color: white;
+}

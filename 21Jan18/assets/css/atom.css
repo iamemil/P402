@@ -1,0 +1,78 @@
+body{
+    background: black;
+}
+.main{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.loader{
+    position: absolute;
+    top: 320px;
+    left: 460px;
+    }
+    .atom{
+        position: relative;
+        width: 80px;
+        height: 230px;
+    }
+    .first, .second, .third{
+    border: 3px solid white;
+    width: 80px;
+    position: absolute;
+    height: 230px;
+    border-radius: 100%;
+    }
+    .first{
+        transform: rotate(30deg);
+    }
+    .second{
+        transform: rotate(-30deg);
+    }
+    .third{
+        transform: rotate(90deg);
+    }
+    .first::after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 15px;
+    right: 56px;
+    background: white;
+    border-radius: 100%;
+    }
+    .second::after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: 10px;
+    left: 54px;
+    background: white; 
+    border-radius: 100%;
+    }
+    .third::after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    bottom: 14px;
+    left: 56px;
+    background: white; 
+    border-radius: 100%;
+    }
+    .circle{
+    position: absolute;
+    top: 95px;
+    left: 22px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 100%;
+    }
+    .atom:hover{
+        transition-duration: 60s;
+        transform: rotate(1800000deg);
+    }
+    

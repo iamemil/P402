@@ -1,0 +1,39 @@
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+header{
+background: rgb(63, 152, 224);
+width: 100%;
+height: 50px;
+}
+header .row .col-3{
+line-height: 50px;
+color: white;
+font-size: 25px;
+font-weight: bold;
+}
+
+ul li{
+    margin-left: 5px;
+    line-height: 50px;
+    display: inline-block;
+    position: relative;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:after{
+    content: '';
+    display: block;
+    border-bottom: 2px solid blue;
+    width: 0;
+    position: absolute;
+    left: 0;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+a:hover:after{
+width: 100%; 
+}

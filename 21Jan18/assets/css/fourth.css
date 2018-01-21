@@ -1,0 +1,42 @@
+.main{
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.button{
+    width: 30px;
+    position: relative;
+}
+a{
+    font-size: 30px;
+}
+i{
+    color:black;
+    padding: 15px;
+    border: 2px solid #000000;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+}
+a::before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: 10px;
+    left: 1px;
+    background: black; 
+    border-radius: 70px;
+}
+a::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 10px;
+    right: -33px;
+    background: black; 
+    border-radius: 70px;
+}

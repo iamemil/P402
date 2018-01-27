@@ -1,0 +1,132 @@
+body{
+    background-color: #1b1b24;
+}
+.main{
+margin: 20px;
+}
+.pacman{
+    position: relative;
+}
+.character {
+    z-index: 999;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-right: 60px solid transparent;
+    border-top: 60px solid yellow;
+    border-left: 60px solid yellow;
+    border-bottom: 60px solid yellow;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;   
+    animation-name: character;
+    animation-duration: 10s;  
+  }
+.ball{
+  width: 0px;
+  height: 0px;
+  border: 30px solid red;
+  border-radius: 30px;
+}
+.position-1{
+    position: absolute;
+    top: 100px;
+    right: 400px;
+    animation-name: vanish;
+    animation-duration: 300ms; 
+    animation-delay: 4400ms;
+    animation-fill-mode: forwards;
+}
+  .position-2{
+    position: absolute;
+    top: 400px;
+    left: 200px;
+    animation-name: vanish;
+    animation-duration: 300ms; 
+    animation-delay: 8100ms;
+    animation-fill-mode: forwards;
+}
+@keyframes character{
+    0%   {
+        top: 0px;
+        left: 0px;
+    }
+    14%{
+        border-right: 60px solid transparent;  
+    }
+    16% {
+        top: 0px;
+        left: 700px;
+        border-right: 60px solid yellow;
+    }
+    18%{
+        border-right: 60px solid transparent; 
+    }
+    40%  {        
+        top: 0px;
+        left: 1370px;                      
+    }
+    42%{
+        transform: rotate(0deg);        
+        border-right: 60px solid transparent;
+        
+    }
+    43%{
+        top: 0;
+        left: 1370px;
+        transform: rotate(90deg);
+    }
+    45% {
+        top: 80px;
+        left: 1370px; 
+        transform: rotate(90deg);      
+        border-right: 60px solid yellow; 
+    }
+    50%  {
+        top: 400px;
+        left: 1370px; 
+        transform: rotate(90deg);
+        border-right: 60px solid transparent; 
+    }
+    62%{
+        transform: rotate(180deg);
+        border-right: 60px solid transparent;
+    }
+    63%{
+        transform: rotate(180deg);
+        border-right: 60px solid yellow;
+    }
+    65% {
+        top: 380px;
+        left: 700px; 
+        transform: rotate(180deg);       
+        border-right: 60px solid yellow; 
+    }
+    80% {
+        top: 380px;
+        left: 180px;
+        transform: rotate(180deg);        
+        border-right: 60px solid transparent; 
+    }
+    85% {
+        top: 380px;
+        left: 180px;
+        transform: rotate(180deg);        
+        border-right: 60px solid yellow; 
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        transform: rotate(-90deg);
+        border-right: 60px solid yellow; 
+    }
+}
+@keyframes vanish{
+    0%   {
+        opacity: 1;        
+    }
+    100% {
+        opacity: 0;        
+    }
+}

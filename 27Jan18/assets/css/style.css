@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400');
+body{
+    padding: 0;
+    margin: 0;
+    background: #212739;
+}
+#team{
+    width: 80%;
+    margin: 0 auto;
+}
+.rows{
+    list-style: none;
+}
+.rows li{
+position: relative;
+margin: 5px 10px;
+display: inline-block;
+width: calc(33% - 20px);
+text-decoration: none;
+overflow: hidden;
+}
+.rows li img{
+width: 100%;
+transition: all 2s ease;
+}
+.rows li:hover img{
+    transform: scale(1.1);
+    filter: blur(2px);
+}
+.overlay{
+opacity: 0;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 99.9%;
+background: rgba(0, 0, 0, 0.4);
+color: white;
+-webkit-transition: all 0.5s ease-in;
+-o-transition: all 0.5s ease-in;
+transition: all 0.5s ease-in;
+}
+.overlay-text{
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    bottom: 0;
+    font-weight: 300;
+    height: 100%;
+    width: 100%;
+}
+.overlay-text .preview{
+    position: absolute;
+    top: 48%;
+    left: 38%;  
+    color: white;
+    border: 1px solid white;
+    padding: 7px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.overlay-text .preview:hover{
+    position: absolute;
+    top: 48%;
+    left: 38%;  
+    color: white;
+    border: 1px solid white;
+    padding: 7px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.overlay-text .home-link{
+    position: absolute;
+    top: 57%;
+    left: 45.5%;    
+    color: white;
+    text-decoration: none;
+}
+
+.rows li:hover .overlay {
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}

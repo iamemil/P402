@@ -1,0 +1,39 @@
+body{
+    margin: 0 auto;
+}
+.box{
+    height: 100px;
+    width: 33.33%;
+}
+.color1{
+    background-color: rgb(0, 255, 221);
+    align-self: flex-start;
+}
+.color2{
+    background-color: rgb(81, 255, 0);
+    align-self: center;
+}
+.color3{
+    background-color: rgb(255, 0, 242);
+    align-self: flex-end;
+}
+.color4{
+    background-color: rgb(0, 255, 221);
+    align-self: center;
+}
+.color5{
+    background-color: rgb(81, 255, 0);
+    align-self: flex-start;
+}
+.flex-one, .flex-two{
+    display: flex;
+    align-items: center;    
+}
+.flex-one{
+    justify-content: space-around;
+    height: 300px;
+}
+.flex-two{
+    justify-content: flex-start;
+    height: 300px;
+}

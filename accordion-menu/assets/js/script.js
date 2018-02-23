@@ -24,13 +24,16 @@ subItems:[]
 document.write("<ul class='accordion-tabs'>");
 for (var x = 0; x < accordion.length; x++) {
 document.write("<li class='accordion-items'><i class='" + accordion[x].icon + "'></i> " + accordion[x].name);
+if(accordion[x].subItems != ""){
 document.write("<ul>");
 for (var a = 0; a < accordion[x].subItems.length; a++){
 document.write("<li>" + accordion[x].subItems[a] + "</li>");
 }
 document.write("</ul>");
+}
 document.write("</li>");
 }
+document.write("<li class='copyright'>Design by <a href='https://dribbble.com/shots/989145-Flat-Accordion'>Marion Serenio</a></li>");
 document.write("</ul>");
 
     var menuItems = document.querySelectorAll(".accordion-items");

@@ -1,0 +1,41 @@
+.tabs{
+    position: relative;
+}
+.tabItems{
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    display: inline-block;
+}
+.tabItems button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+}
+.tabItems .tabContent{
+    border: 1px solid #ccc;
+    padding: 15px;
+    position: absolute;
+    display: none;
+    width: 400px;
+}
+.tabs .active .tabContent{
+    display: block;
+}
+#noteArea li{
+    margin: 10px;
+    width: 200px;
+    overflow-wrap: break-word;
+    list-style: none;
+    background: green;
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+#noteArea li i{
+    color: darkred;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

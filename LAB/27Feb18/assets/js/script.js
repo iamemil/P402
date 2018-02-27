@@ -11,7 +11,7 @@ calculate.addEventListener("click", function () {
     if (price < initialPrice) {
         alert("İlkin ödəniş qiymətdən çox ola bilməz");
     } else {
-        var monthPrice = (price - initialPrice) / creditMonth;
+        var monthPrice = ((price - initialPrice) / creditMonth).toPrecision(4);
         priceTimetable.innerHTML = "";
 
         var tableHead = document.createElement("tr");

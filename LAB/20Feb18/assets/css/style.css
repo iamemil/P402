@@ -1,0 +1,40 @@
+body{
+    margin: 0 auto;
+}
+.main{
+    position: relative;
+}
+ul li{
+    list-style: none;
+    padding: 10px;
+    display: inline-block;
+}
+.images li img{
+    width: 300px;
+    height: auto;
+}
+
+.display{
+    position: absolute;
+    top: 60px;
+    left: 30%;
+    background: rgba(128, 128, 128, 0.4);
+    width: 500px;
+    
+    opacity: 0;
+    transition: all 1s;
+}
+#displayImg{
+    width: 100%;
+}
+.display button{
+    float: right;
+    margin: 20px;
+}
+.clear{
+    clear:both;
+}
+.show{
+    opacity: 1;
+    transition: all 1s;
+}

@@ -33,6 +33,7 @@
     transition: all 0.5s ease;
 }
 .sidebar .navbar .navbar-items a,
+.sidebar .playlists .playlists-items a,
 .content .header .userbar .userbar-items .options a{
     text-decoration: none;
     color: inherit;

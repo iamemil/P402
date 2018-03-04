@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,600');
+.mainWrapper{
+    font-family: 'Lato', sans-serif;
+}
+.sidebar{
+    position: absolute;
+    background-color: #181B40;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    left: 0;
+    color: #bbb0c9;
+    font-weight: 600;
+    z-index: 10;
+}
+.sidebar .navbar {
+    padding: 40px;
+}
+.sidebar .navbar .navbar-items{
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+.sidebar .playlists{
+    padding-left:50px;
+}
+.sidebar .playlists .playlists-items{
+    padding-top: 10px;
+    transition: all 0.5s ease;
+}
+.sidebar .navbar .navbar-items:hover,
+.sidebar .playlists .playlists-items:hover{
+    color: #e8e3e3;
+    transition: all 0.5s ease;
+}
+.sidebar .navbar .navbar-items a,
+.sidebar .playlists .playlists-items a,
+.content .header .userbar .userbar-items .options a{
+    text-decoration: none;
+    color: inherit;
+}
+.content{
+    padding-left: 200px; 
+    background-color: #0D1436;
+    color: #bbb0c9;
+    height: 100vh;
+}
+.content .header .search{
+    width: 400px;
+    padding: 20px 30px;
+    font-size: 20px;
+}
+.content .header .search input{
+    width: 87%;
+    border: 0px;
+    opacity: 0.7;
+    height: 20px;
+    padding: 5px;
+    font-size: 14px;
+    background-color: #0D1436;
+    color: #bbb0c9;
+}
+.content .header .userbar{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+}
+.content .header .userbar .profilePic{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+.content .header .userbar span{
+    margin: 6px;
+}
+.content .header .userbar .userbar-items{
+display: none;
+justify-content: center;
+flex-wrap: wrap;
+position: absolute;
+top: 40px;
+width: 85px;
+background-color: rgba(255, 255, 255, 0.13);
+border-radius: 5px;
+}
+.content .header .userbar .userbar-items .options{
+    padding: 5px;
+}
+.content .header .userbar:hover .userbar-items{
+    display: block;
+}

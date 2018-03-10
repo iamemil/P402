@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+.mainWrapper{
+    font-family: 'Lato', sans-serif;
+}
+.navbar-items{
+    display: inline-block;
+    background: green;
+    padding: 10px;
+    color: white;
+    position: relative;
+    cursor: pointer;
+}
+.navbar-items.active{
+    background: darkgreen; 
+}
+.dropdown{
+    position: absolute;
+    top: 40px;
+    display: none;
+    background: green;
+    color: white;
+    width: 150px; 
+    margin-left: -10px;
+}
+.dropdown.active{
+    display: block;
+}
+.dropdown-items{
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.dropdown .dropdown{
+    top: 0px;
+    left: 165px;
+    cursor: pointer;
+}

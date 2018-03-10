@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+body{
+    margin: 0 auto;
+}
+.mainWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+.tabs{
+    margin-top: 20px;
+    width: 80%;
+    height: 400px;
+    border: 1px solid gray;
+    position: relative;
+}
+.tabs .tabNavigation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.tabNavigation .navButton{
+    margin-right: 2px;
+    height: 100%;
+    width: 160px;
+    background: #f5f5f5;
+}
+.tabNavigation button{
+    margin-right: 2px;
+    height: 100%;
+    padding: 10px;
+    background: #f5f5f5;
+}
+.tabNavigation .active{
+    background: #ececec;
+}
+.tabNavigation .navButton .headText{
+    padding: 6px;
+}
+.tabNavigation .navButton .desc{
+padding: 2px 6px;
+font-size: 14px;
+}
+.tabs .tabContent{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    font-size: initial;
+}
+.tabs .tabContent .tabText{
+    padding: 20px;
+    display: none;
+}

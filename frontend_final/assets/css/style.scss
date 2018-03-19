@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Changa:200,300,400,500,600,700,800|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Ubuntu:300,300i,400,400i,500,500i,700,700i');
+/* Fonts */
+$font-1: 'Ubuntu', sans-serif;
+$font-2: 'Poppins', sans-serif;
+$font-3: 'Changa', sans-serif;
+
+.dropdown-menu{
+    border-top: 2px solid #232323;
+    border-radius: 0;
+    
+    .dropdown-item{
+        display: block;
+        width: 100%;        
+        border-top: 1px solid #e9ecef;
+        &:last-child,
+        &:first-child{
+            border: 0;
+        }        
+        padding: 12px 15px;
+        transition: all 0.5s ease;        
+        a{        
+            clear: both;
+            font-weight: 400;
+            color: #212529;
+            text-align: inherit;
+            white-space: nowrap;
+            text-decoration: none;
+        }
+        &:hover{
+            background-color:#232323;
+            a{color: #fff;}
+            color: #fff;
+            transition: all 0.5s ease;
+        }
+    }
+   
+    @media (min-width: 768px) {
+    &.subDropdown{
+        position: absolute;
+        top: 66%;
+        left: 100%;
+    }
+}
+}

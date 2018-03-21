@@ -1,0 +1,33 @@
+.subscription{
+    height: 400px;
+    font-family: 'Ubuntu', sans-serif;        
+        .text{
+            color: #aaaaaa;
+        }
+        input{
+            color: #aaaaaa;
+            font-size: 14px;
+            font-weight: 300;
+            font-family: 'Changa', sans-serif;
+            border-radius: 5px;
+            border: 1px solid transparent;
+            background-color: #edf7ff;
+            transition: all 0.3s ease;
+            &:focus{
+                box-shadow: initial;
+                border: 1px solid #2fc42b;
+                transition: all 0.3s ease;
+            }
+        }
+        .btn{
+            padding: 15px 50px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: all 0.5s;
+            &.btn-dark:hover{
+                border-color: $theme-color;
+                background-color: $theme-color;
+                transition: all 0.5s;                
+            }
+        }
+}

@@ -1,0 +1,42 @@
+.services{
+    .content{
+        .text-green{
+            color: $theme-color;
+        }
+        .row{
+            padding-top: 60px;
+        }
+        .sakai-card{
+            position: relative;
+            display: block;
+            text-align: center;
+            padding: 40px 40px;
+            background-color: #ffffff;
+            border: initial;
+            width: 100% !important;
+            font-family: 'Ubuntu', sans-serif;
+            
+            .services-element{
+                padding-left: 33px;
+                padding-right: 33px;
+            }
+            .more{
+                color: inherit;
+                &:hover{
+                    text-decoration: none;
+                    color: $theme-color;
+                }
+            }
+            .refer{
+                font-size: 15px;
+                line-height: 25px;
+                font-weight: 300;
+                color: #aaa;
+                &:hover{
+                    text-decoration: none;
+                    color: $theme-color;
+                }
+            }
+        }
+    }
+}

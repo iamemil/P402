@@ -1,91 +1,413 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Sakai Index Page</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="Logo"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/flaticon.css">
+  <link href="assets/css/plugins/revolution/settings.css" rel="stylesheet" type="text/css">
+  <!-- REVOLUTION SETTINGS STYLES -->
+  <link href="assets/css/plugins/revolution/layers.css" rel="stylesheet" type="text/css">
+  <!-- REVOLUTION LAYERS STYLES -->
+  <link href="assets/css/plugins/revolution/navigation.css" rel="stylesheet" type="text/css">
+  <!-- REVOLUTION NAVIGATION STYLES -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Sakai Index Page</title>
+</head>
+
+<body>
+  <!--NavBar-->
+  <nav class="navbar navbar-expand-lg navbar-dark text-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/logo.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-    
+
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown p-3 hover">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
               Home
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <div class="dropdown-item"><a href="#">Homepage One</a></div>              
-              <div class="dropdown-item"><a href="#">Homepage Two</a></div>             
-              <a class="dropdown-item dropdown-toggle dropright" href="#" id="homeSubDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Headers Style</a>
+              <a href="#" class="dropdown-item">Homepage One</a>
+              <a class="dropdown-item" href="#">Homepage Two</a>
+              <a class="dropdown-item dropdown-toggle dropright" href="#" id="homeSubDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">Headers Style</a>
               <div class="dropdown-menu subDropdown" aria-labelledby="navbarDropdown">
                 <a class="dropdown-item" href="#">Header Style One</a>
                 <a class="dropdown-item" href="#">Header Style Two</a>
               </div>
             </div>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <li class="nav-item dropdown p-3 hover">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
               About Us
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="about.html">About</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Team</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Pricing</a>
+              <a href="about.html" class="dropdown-item">About Us</a>
+              <a href="#" class="dropdown-item">Team</a>
+              <a href="#" class="dropdown-item">Pricing</a>
             </div>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <li class="nav-item dropdown p-3 hover">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
               Services
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Services Type 01</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Services Type 02</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Keyword Marketing</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Content Marketing</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">SEO Services</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Optimize for SEO</a>
+              <a href="#" class="dropdown-item">Services Type 01</a>
+              <a href="#" class="dropdown-item">Services Type 02</a>
+              <a href="#" class="dropdown-item">Keyword Marketing</a>
+              <a href="#" class="dropdown-item">Content Marketing</a>
+              <a href="#" class="dropdown-item">SEO Services</a>
+              <a href="#" class="dropdown-item">Optimize for SEO</a>
             </div>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <li class="nav-item dropdown p-3 hover">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
               Case Studies
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Case Studies</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Case Studies Single</a>              
+              <a href="#" class="dropdown-item">Case Studies</a>
+              <a href="#" class="dropdown-item">Case Studies Single</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown p-3 hover">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Blog
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a href="#" class="dropdown-item">Blog Classic Layout</a>
+              <a href="#" class="dropdown-item">Blog Grid Layout</a>
+              <a href="#" class="dropdown-item">Blog Single</a>
+              <a href="#" class="dropdown-item">404 Error Page</a>
+            </div>
+          </li>
+          <li class="nav-item p-3">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item dropdown p-3 click">
+
+            <a class="nav-link dropdown-toggle no-drop searchBtn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <i class="nav-link fas fa-search"></i>
+            </a>
+            <div class="dropdown-menu navSearchBar border-top-green" aria-labelledby="navbarDropdown">
+              <form class="form-inline d-flex flex-row justify-content-start">
+                <input class="form-control searchInput" type="search" placeholder="Search Here" aria-label="Search">
+                <button class="btn btn-outline-success search" type="submit">
+                  <i class="nav-link fas fa-search"></i>
+                </button>
+              </form>
             </div>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </div>
+    </div>
+  </nav>
+  <!--End NavBar-->
+  <!--Main Slider-->
+  <section class="main-slider main-slider-one">
+    <div class="rev_slider_wrapper fullwidthbanner-container" id="rev_slider_one_wrapper" data-source="gallery">
+      <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
+        <ul>
+          <!-- Slide 1 -->
+          <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7"
+            data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="default"
+            data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
+            data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="assets/img/image-1.jpg"
+            data-title="Slide Title" data-transition="parallaxvertical">
+
+            <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat"
+              data-no-retina="" src="assets/img/image-1.jpg">
+
+            <div class="tp-caption tp-resizeme" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+              data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-whitespace="nowrap"
+              data-width="none" data-hoffset="['473','15','15','15']" data-voffset="['260','180','140','120']" data-x="['left','left','left','left']"
+              data-y="['top','top','top','top']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+              <h4>Welcome to Sakai </h4>
+            </div>
+
+            <div class="tp-caption tp-resizeme" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+              data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-whitespace="nowrap"
+              data-fontsize="['64','40','36','24']" data-width="none" data-hoffset="['473','15','15','15']" data-voffset="['300','220','190','160']"
+              data-x="['left','left','left','left']" data-y="['top','top','top','top']" data-textalign="['top','top','top','top']"
+              data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+              <h2>Best SEO
+                <br> Solution Theme</h2>
+            </div>
+
+            <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]"
+              data-responsive_offset="on" data-type="text" data-height="none" data-whitespace="normal" data-width="['670','470','600','400']"
+              data-hoffset="['473','15','15','15']" data-voffset="['460','350','310','270']" data-x="['left','left','left','left']"
+              data-y="['top','top','top','top']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+              <div class="text">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital
+                divide with additional</div>
+            </div>
+
+            <div class="tp-caption tp-resizeme" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+              data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-whitespace="nowrap"
+              data-width="none" data-hoffset="['473','15','15','15']" data-voffset="['530','470','410','400']" data-x="['left','left','left','left']"
+              data-y="['top','top','top','top']" data-textalign="['top','top','top','top']" data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+              <a href="#" class="btn btn-dark">Know More</a>
+            </div>
+
+
+            <div class="tp-caption tp-resizeme big-ipad-hidden" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+              data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="none" data-whitespace="nowrap"
+              data-width="none" data-hoffset="['-150','15','15','15']" data-voffset="['50','0','0','0']" data-x="['left','left','left','left']"
+              data-y="['bottom','bottom','bottom','bottom']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+              <figure class="content-image">
+                <img src="assets/img/content-image-2.png" alt="">
+              </figure>
+            </div>
+
+
+            <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme big-ipad-hidden" data-basealign="slide" data-paddingbottom="[0,0,0,0]"
+              data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on"
+              data-type="shape" data-height="auto" data-whitespace="nowrap" data-width="none" data-hoffset="['0','0','0','0']"
+              data-voffset="['0','0','0','0']" data-x="['left','left','left','left']" data-y="['bottom','bottom','bottom','bottom']"
+              data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+              <figure class="content-image">
+                <img src="assets/img/content-image-1.png" alt="">
+              </figure>
+            </div>
+
+          </li>
+
+          <!-- Slide 2 -->
+          <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7"
+            data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1687" data-masterspeed="default"
+            data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
+            data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="assets/img/image-1.jpg"
+            data-title="Slide Title" data-transition="parallaxvertical">
+
+            <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat"
+              data-no-retina="" src="assets/img/image-1.jpg">
+
+            <div class="tp-caption tp-resizeme" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+              data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-whitespace="nowrap"
+              data-width="none" data-hoffset="['473','15','15','15']" data-voffset="['260','180','140','120']" data-x="['left','left','left','left']"
+              data-y="['top','top','top','top']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+              <h4>Welcome to Sakai </h4>
+            </div>
+
+            <div class="tp-caption tp-resizeme" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+              data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-whitespace="nowrap"
+              data-fontsize="['64','40','36','24']" data-width="none" data-hoffset="['473','15','15','15']" data-voffset="['300','220','190','160']"
+              data-x="['left','left','left','left']" data-y="['top','top','top','top']" data-textalign="['top','top','top','top']"
+              data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+              <h2>Best SEO
+                <br> Solution Theme</h2>
+            </div>
+
+            <div class="tp-caption" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]"
+              data-responsive_offset="on" data-type="text" data-height="none" data-whitespace="normal" data-width="['670','470','600','400']"
+              data-hoffset="['473','15','15','15']" data-voffset="['460','350','310','270']" data-x="['left','left','left','left']"
+              data-y="['top','top','top','top']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+              <div class="text">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital
+                divide with additional</div>
+            </div>
+
+            <div class="tp-caption tp-resizeme" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+              data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="text" data-height="none" data-whitespace="nowrap"
+              data-width="none" data-hoffset="['473','15','15','15']" data-voffset="['530','470','410','400']" data-x="['left','left','left','left']"
+              data-y="['top','top','top','top']" data-textalign="['top','top','top','top']" data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+              <a href="#" class="btn btn-dark">Know More</a>
+            </div>
+
+
+            <div class="tp-caption tp-resizeme big-ipad-hidden" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+              data-paddingtop="[0,0,0,0]" data-responsive_offset="on" data-type="shape" data-height="none" data-whitespace="nowrap"
+              data-width="none" data-hoffset="['-150','15','15','15']" data-voffset="['50','0','0','0']" data-x="['left','left','left','left']"
+              data-y="['bottom','bottom','bottom','bottom']" data-textalign="['top','top','top','top']" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":3000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+              <figure class="content-image">
+                <img src="assets/img/content-image-2.png" alt="">
+              </figure>
+            </div>
+
+
+            <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme big-ipad-hidden" data-basealign="slide" data-paddingbottom="[0,0,0,0]"
+              data-paddingleft="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingtop="[0,0,0,0]" data-responsive_offset="on"
+              data-type="shape" data-height="auto" data-whitespace="nowrap" data-width="none" data-hoffset="['0','0','0','0']"
+              data-voffset="['0','0','0','0']" data-x="['left','left','left','left']" data-y="['bottom','bottom','bottom','bottom']"
+              data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+              <figure class="content-image">
+                <img src="assets/img/content-image-1.png" alt="">
+              </figure>
+            </div>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!--End Main Slider-->
+
+  <!--E-Mail Subscription-->
+  <section class="subscription bg-white d-flex justify-content-center">
+    <div class="container">
+      <div class="content">
+        <h3 class="text-center">Check your website’s SEO problems right here!</h3>
+        <p class="text text-center">Volutpat felis at libero mattis condimentum. Sed aliquam vehicula metus sit amet dapibus. Aliquamnec ipsum tincidunt,
+          pulvinar arcu et, molestie odio. Pellentesque iaculis sed sem vel scelerisque.</p>
+        <form class="form-inline d-flex justify-content-center py-5">
+          <div class="form-group mx-sm-3">
+            <input type="text" class="form-control p-3" id="website" placeholder="Your Website">
+          </div>
+          <div class="form-group mx-sm-3">
+            <label for="inputPassword2" class="sr-only">Password</label>
+            <input type="email" class="form-control p-3" id="email" placeholder="Your Email">
+          </div>
+          <button type="submit" class="btn btn-dark">Send Now</button>
         </form>
       </div>
-    </nav>
+    </div>
+  </section>
+  <!--End E-Mail Subscription-->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  </body>
+  <!--Advantages-->
+  <section class="services bg-lightblue d-flex justify-content-center">
+    <div class="container">
+      <div class="content">
+        <h2 class="text-center">We’re California
+          <br>Based SEO &
+          <span class="text-green">Digital Marketing Agency</span>
+        </h2>
+        <div class="row">
+          <div class="services-element col-md-4 col-sm-6 col-xs-12">
+            <div class="sakai-card wow fadeInLeft" data-wow-duration="500ms">
+              <img class="card-img-top" src="assets/img/services/service-3.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="#" class="more">Expert Team & Quick
+                    <br>Support</a>
+                </h5>
+                <a href="#" class="refer">Read More
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="services-element col-md-4 col-sm-6 col-xs-12">
+            <div class="sakai-card wow fadeInDown" data-wow-duration="500ms">
+              <img class="card-img-top" src="assets/img/services/service-2.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="#" class="more">Fast &
+                    <br>Quick Result</a>
+                </h5>
+                <a href="#" class="refer">Read More
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="services-element col-md-4 col-sm-6 col-xs-12">
+            <div class="sakai-card wow fadeInUp" data-wow-duration="500ms">
+              <img class="card-img-top" src="assets/img/services/service-2.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <a href="#" class="more">Fast &
+                    <br>Quick Result</a>
+                </h5>
+                <a href="#" class="refer">Read More
+                  <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!--End Advantages-->
+
+  <!--Fun Facts-->
+  <section class="facts">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="sakai-card">
+            <div class="card-body">
+              <span class="flaticon-target-1"></span>
+              <h3 class="card-title">Projects</h3>
+              <span class="count-text">2000</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="sakai-card">
+            <div class="card-body">
+              <span class="flaticon-man"></span>
+              <h3 class="card-title">Active Clients</h3>
+              <span class="count-text">500</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="sakai-card">
+            <div class="card-body">
+              <span class="flaticon-people"></span>
+              <h3 class="card-title">Commitment</h3>
+              <span class="count-text">250</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="sakai-card">
+            <div class="card-body">
+              <span class="flaticon-sports"></span>
+              <h3 class="card-title">Success Rate</h3>
+              <span class="count-text">100</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End Fun Facts-->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <!--Revolution Slider-->
+  <script src="assets/js/plugins/revolution/themepunch.revolution.min.js"></script>
+  <script src="assets/js/plugins/revolution/themepunch.tools.min.js"></script>
+  <script src="assets/js/plugins/revolution/revolution.extension.actions.min.js"></script>
+  <script src="assets/js/plugins/revolution/revolution.extension.carousel.min.js"></script>
+  <script src="assets/js/plugins/revolution/revolution.extension.kenburn.min.js"></script>
+  <script src="assets/js/plugins/revolution/revolution.extension.layeranimation.min.js"></script>
+  <script src="assets/js/plugins/revolution/revolution.extension.migration.min.js"></script>
+  <script src="assets/js/plugins/revolution/revolution.extension.navigation.min.js"></script>
+  <script src="assets/js/plugins/revolution/revolution.extension.parallax.min.js"></script>
+  <script src="assets/js/plugins/revolution/revolution.extension.slideanims.min.js"></script>
+  <script src="assets/js/plugins/revolution/revolution.extension.video.min.js"></script>
+  <script src="assets/js/main-slider-script.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/appear.js"></script>
+  <script src="assets/js/jquery.countTo.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>

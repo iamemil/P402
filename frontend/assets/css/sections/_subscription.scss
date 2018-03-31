@@ -1,0 +1,25 @@
+.subscription{    
+    font-family: 'Ubuntu', sans-serif;        
+        .text{
+            color: #aaaaaa;
+        }
+        input{
+            color: #aaaaaa;
+            font-size: 14px;
+            font-weight: 300;
+            font-family: 'Changa', sans-serif;
+            border-radius: 5px;
+            width: 100% !important;
+            border: 1px solid transparent;
+            background-color: #edf7ff;
+            margin-bottom: 10px;
+            @include transition(all 0.3s ease);           
+            &:focus{
+                box-shadow: initial;
+                border: 1px solid #2fc42b;
+                background-color: #edf7ff;
+                transition: all 0.3s ease;
+            }
+        }
+        
+}

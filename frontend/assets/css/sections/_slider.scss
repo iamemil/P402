@@ -1,0 +1,29 @@
+.main-slider{
+    .tp-caption{
+        font-family: 'Ubuntu', sans-serif;
+        color: white;
+        h4,h2{            
+            text-transform: capitalize;
+        }
+        h2{
+            font-weight: 700;
+            font-size: 70px;
+        }
+        .text{
+            font-weight: 300;
+            font-size: 15px; 
+        }
+        .btn{
+            padding: 15px 38px;
+            font-weight: 700;
+            text-transform: capitalize;
+            &.btn-dark:hover{
+                border-color: $theme-color;
+                background-color: $theme-color;
+            }
+        }
+    }
+    .tp-bannertimer{
+        display: none;
+    }
+}

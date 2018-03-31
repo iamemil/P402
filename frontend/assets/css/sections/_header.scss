@@ -1,0 +1,46 @@
+.page-title{
+    background-color: #252934;
+    padding: 280px 0px 140px;    
+    .header-up{
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 85px 0px 60px;
+        text-align: center;
+        h1{
+            position: relative;
+            font-size: 70px;
+            line-height: 1em;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        .bread-crumb{
+            position: relative;
+            font-size: 15px;
+            line-height: 24px;
+            font-weight: 700;
+            margin-right: 7px;
+            padding-right: 7px;
+            text-transform: uppercase;
+            list-style: none;
+            cursor: default;
+            display: inline-block;
+            font-family: "Ubuntu", sans-serif;
+            li{                
+                color: #ffffff;
+                
+                display: inline;
+                a{
+                    color: #ffffff;
+                    @include transition(all 0.3s ease); 
+                    &:hover{
+                        color: $theme-color;
+                        text-decoration: none;
+                        @include transition(all 0.3s ease); 
+                    }
+                }
+            }
+        }
+    }
+}

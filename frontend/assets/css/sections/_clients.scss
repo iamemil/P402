@@ -1,0 +1,20 @@
+.clients{
+    background-color: #232732;
+    .clients-karusel{
+        padding:25px 0px;
+        position:relative;
+        text-align:center;
+        border-right: 1px solid #2f3340;
+        @include transition(all 0.3s ease);
+        div{            
+            display: inline;
+            img{
+                max-width:18%;
+                width:auto;
+                display:inline-block;
+                @include transition(all 0.3s ease);
+            }
+        }        
+    }
+}
+

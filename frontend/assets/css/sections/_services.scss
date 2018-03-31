@@ -1,0 +1,52 @@
+.services{
+    font-family: 'Ubuntu', sans-serif;        
+    .text{
+        color: #aaaaaa;
+    }
+    .services-element{
+        margin-bottom: 30px;
+        padding-top: 40px;
+        padding-left: 35px;
+        position: relative;
+        @include transition(all 0.3s ease); 
+        .element-content{
+            .icon{
+                position: absolute;
+                left: 35px;
+                top: 40px;
+                width: 80px;
+                height: 80px;
+            }    
+            .text-area{
+                padding-left: 95px;
+                h3{
+                    display: inline;
+                    font-size: 20px;
+                    font-weight: 500;
+                    margin-bottom: 5px;
+                    
+                    a{
+                        color: #222222;
+                        text-decoration: none;
+                        @include transition(all 0.5s ease); 
+                        &:hover{
+                            color: $theme-color;
+                            @include transition(all 0.5s ease); 
+                        }
+                    }                                
+                }
+                .text{
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: #aaaaaa;
+                    font-family: "Changa", sans-serif;
+                    font-weight: 300;
+                }
+            }          
+            }
+            &:hover{                
+                box-shadow: 5px 22px 21px rgba(234,234,234,.75);
+                @include transition(all 0.3s ease); 
+            }  
+        }             
+    } 

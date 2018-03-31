@@ -1,0 +1,76 @@
+.news{
+    font-family: 'Ubuntu', sans-serif;
+    .row{
+        margin-top: 40px;
+        .news-item{
+            margin-bottom: 30px;
+            .news-content{
+                box-shadow: 0 3px 30px rgba(230,230,230,.75);
+                .news-header{
+                    position: relative;
+                    padding: 40px 34px 40px 105px;
+                    background-color: #ffffff;
+                    .date{
+                        position: absolute;
+                        max-width: 35px;
+                        left: 35px;
+                        top: 40px;
+                        text-align: center;
+                        h3{
+                            color: #2fc42b;
+                            font-weight: 300;
+                            font-size: 30px;
+                            font-family: "Ubuntu", sans-serif;
+                            margin: 0;
+                        }
+                        span{
+                            display: inline-block;
+                            font-size: 15px;
+                            line-height: 17px;
+                            color: #aaaaaa;
+                            font-weight: 500;
+                            font-family: "Ubuntu", sans-serif;
+                        }
+                    }
+                    .info{
+                        position: relative;
+                        text-align: left;
+                        .tags{
+                            margin-bottom: 0px;
+                            line-height: 22px;
+                            font-size: 12px;
+                            color: #aaaaaa;
+                            font-weight: 300;
+                            font-family: "Ubuntu", sans-serif;
+                        }
+                        h3{
+                            position: relative;
+                            font-size: 20px;
+                            line-height: 25px;
+                            font-weight: 500;
+                            a{
+                                color: #333333;
+                                @include transition(all 0.3s ease); 
+                                &:hover{
+                                    color: $theme-color;
+                                    text-decoration: none;
+                                    @include transition(all 0.3s ease); 
+                                }
+                            }
+                        }
+                        &::before{
+                            position: absolute;
+                            left: -18px;
+                            top: 0;
+                            height: 100%;
+                            width: 2px;
+                            background-color: #d9d9d9;
+                            content: "";
+                        }
+                    }
+                }
+            }
+
+        }
+    }   
+}

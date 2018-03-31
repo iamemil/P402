@@ -1,0 +1,88 @@
+.testimonials{
+    background-image: url('../img/background/4.jpg');
+    position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #2f3340;
+    padding: 140px 0 130px;
+    &.style-two{
+        background-color:#191a1e;	
+    }
+    .slider-container{
+        position: relative;
+        padding-right: 85px;
+        padding-left: 170px;
+        min-height: 135px;
+        margin-bottom: 30px;
+        .testimonial-slider{
+            position: relative;
+            margin-bottom: 30px;
+            .slide-item{
+                text-align: left;
+                .fa{
+                    position: relative;
+                    font-size: 10px;
+                    vertical-align: top;
+                    top: 0px;
+                    color: #ffffff;
+                    font-style: italic;
+                    font-weight: 300;
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+                .text{
+                    position: relative;
+                    display: inline;
+                    font-size: 25px;
+                    line-height: 35px;
+                    font-family: "Changa", sans-serif;
+                    font-weight: 200;
+                    color: #ffffff;
+                    font-style: italic;
+                }
+                .info{
+                    margin-top: 45px;
+                    position: relative;
+                    display: block;
+                    margin-bottom: 8px;
+                    .name{
+                        font-size: 25px;
+                        color: #ffffff;
+                        font-family: "Changa", sans-serif;
+                        font-weight: 500;
+                        display: block;
+                        margin-bottom: 8px;
+                    }
+                    .position{
+                        font-size: 15px;
+                        color: $theme-color;
+                        font-family: "Changa", sans-serif;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+        .testimonial-thumbnail{
+            position: absolute;
+            left: 0;
+            top: 0;
+            max-width: 126px;
+            .thumbnail{
+                position: relative;
+                float: left;
+                width: 58px;
+                margin-right: 5px;
+                margin-bottom: 5px;
+                background-color: #444853;
+                transition: all 300ms ease;
+                img{
+                    width: 100%;
+                }
+                &.active{
+                    background-color: #ffffff;
+                    transform:scale(1.1);
+                }                
+            }
+        }
+    }
+}

@@ -1,0 +1,67 @@
+.case-single{
+    .row{
+        margin-bottom: 50px;
+        .detail{
+            ul{
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+                li{
+                    position: relative;
+                    font-size: 15px;
+                    line-height: 30px;
+                    color: #aaaaaa;
+                    background: #ffffff;
+                    width: 100%;
+                    font-weight: 300;
+                    font-family: "Changa", sans-serif;
+                    span{
+                        position: relative;
+                        width: 160px;
+                        font-weight: 300;
+                        color: #333333;
+                        display: inline-block;
+                        &::after{
+                            position: absolute;
+                            right: 40px;
+                            top: 0;
+                            font-size: 15px;
+                            line-height: 30px;
+                            content: ":";
+                            color: #333333;
+                        }
+                    }                    
+                }
+            }
+        }
+        .detail-greenCheck{
+            ul{
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+                li{
+                    position: relative;
+                    font-size: 17px;
+                    line-height: 30px;
+                    color: #333333;
+                    padding-left: 27px;
+                    font-weight: 300;
+                    font-family: "Changa", sans-serif;
+                    &::before{
+                        position: absolute;
+                        content: "\f00c";
+                        left: 0px;
+                        top: 0px;
+                        color: $theme-color;
+                        font-size: 17px;
+                        line-height: 30px;
+                        font-family: "FontAwesome";
+                    }
+                }  
+            }
+        }
+    }
+    .text{
+        font-size: 15px !important;
+    }
+}

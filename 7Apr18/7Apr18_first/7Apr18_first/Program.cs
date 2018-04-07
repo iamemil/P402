@@ -12,6 +12,8 @@ namespace _7Apr18_first
         {
             byte ExamResult = 91;
 
+            // Exam Result
+
             // 0-40 arasi G
             // 41-50 arasi F
             // 51-60 arasi E
@@ -32,7 +34,7 @@ namespace _7Apr18_first
             {
                 Console.WriteLine("Xal:" + ExamResult + " " + "Qiymet:E");
             }
-            //else if (ExamResult > 60 && ExamResult <= 70)
+            else if (ExamResult > 60 && ExamResult <= 70)
             {
                 Console.WriteLine("Xal:" + ExamResult + " " + "Qiymet:D");
             }

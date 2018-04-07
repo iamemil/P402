@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace _7Apr18_first
 {
@@ -56,22 +52,59 @@ namespace _7Apr18_first
 
             // 3-e, 7-e ve 21-e bolunenler 
 
-            for (int i = 0; i <= 100; i++)
+            //for (int i = 0; i <= 100; i++)
+            //{
+            //    if (((i % 3) == 0) && ((i % 7) == 0))
+            //    {
+            //        Console.WriteLine(i + " 7 ve 3-e bolunur.");
+            //    }
+            //    else if ((i % 7) == 0)
+            //    {
+            //        Console.WriteLine(i + " 7-ye bolunur.");
+            //    }
+            //    else if ((i % 3) == 0)
+            //    {
+            //        Console.WriteLine(i + " 3-e bolunur.");
+            //    }
+            //}
+
+            // Faiz hesablayan
+
+            double convertedPrice = 0;
+            double convertedNewPrice = 0;
+            double percentage = 0;
+
+            Console.WriteLine("Evvelki qiymeti daxil edin:");
+            string price = Console.ReadLine();
+
+            while (!double.TryParse(price, out convertedPrice))
             {
-                if (((i % 3) == 0) && ((i % 7) == 0))
-                {
-                    Console.WriteLine(i + " 7 ve 3-e bolunur.");
-                }
-                else if ((i % 7) == 0)
-                {
-                    Console.WriteLine(i + " 7-ye bolunur.");
-                }
-                else if ((i % 3) == 0)
-                {
-                    Console.WriteLine(i + " 3-e bolunur.");
-                }
+                Console.WriteLine("Evvelki qiymeti duzgun daxil edin:");
+                price = Console.ReadLine();
             }
 
+            Console.WriteLine("Yeni qiymeti daxil edin:");
+            string newPrice = Console.ReadLine();
+            while (!double.TryParse(newPrice, out convertedNewPrice))
+            {
+                Console.WriteLine("Yeni qiymeti duzgun daxil edin:");
+                newPrice = Console.ReadLine();
+            }
+            
+            if (convertedPrice > convertedNewPrice)
+            {
+                percentage = ((convertedPrice - convertedNewPrice) / convertedPrice) * 100;
+                Console.WriteLine("Evvelki qiymet:" + convertedPrice + "\nYeni qiymet:" + convertedNewPrice + "\nDeyishiklik: -" + percentage + "%");
+            }
+            else if (convertedPrice == convertedNewPrice)
+            {
+                Console.WriteLine("Deyishiklik yoxdur.");
+            }
+            else
+            {
+                percentage = ((convertedNewPrice - convertedPrice) / convertedPrice) * 100;
+                Console.WriteLine("Evvelki qiymet:" + convertedPrice + "\nYeni qiymet:" + convertedNewPrice + "\nDeyishiklik: +" + percentage + "%");
+            }
             Console.ReadLine();
         }
     }

@@ -10,7 +10,7 @@ namespace _7Apr18_first
     {
         static void Main(string[] args)
         {
-            byte ExamResult = 91;
+
 
             // Exam Result
 
@@ -22,33 +22,54 @@ namespace _7Apr18_first
             // 81-90 arasi B
             // 91-100 arasi A
 
-            if (ExamResult > 0 && ExamResult <= 40)
+            //byte ExamResult = 91;
+
+            //if (ExamResult > 0 && ExamResult <= 40)
+            //{
+            //    Console.WriteLine("Xal:" + ExamResult + " " + "Qiymet:G");
+            //}
+            //else if (ExamResult > 40 && ExamResult <= 50)
+            //{
+            //    Console.WriteLine("Xal:" + ExamResult + " " + "Qiymet:F");
+            //}
+            //else if (ExamResult > 50 && ExamResult <= 60)
+            //{
+            //    Console.WriteLine("Xal:" + ExamResult + " " + "Qiymet:E");
+            //}
+            //else if (ExamResult > 60 && ExamResult <= 70)
+            //{
+            //    Console.WriteLine("Xal:" + ExamResult + " " + "Qiymet:D");
+            //}
+            //else if (ExamResult > 70 && ExamResult <= 80)
+            //{
+            //    Console.WriteLine("Xal:" + ExamResult + " " + "Qiymet:C");
+            //}
+            //else if (ExamResult > 80 && ExamResult <= 90)
+            //{
+            //    Console.WriteLine("Xal:" + ExamResult + " " + "Qiymet:B");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Xal:" + ExamResult + " " + "Qiymet:A");
+            //}
+
+
+            // 3-e, 7-e ve 21-e bolunenler 
+
+            for (int i = 0; i <= 100; i++)
             {
-                Console.WriteLine("Xal:" + ExamResult + " " + "Qiymet:G");
-            }
-            else if (ExamResult > 40 && ExamResult <= 50)
-            {
-                Console.WriteLine("Xal:" + ExamResult + " " + "Qiymet:F");
-            }
-            else if(ExamResult > 50 && ExamResult <= 60)
-            {
-                Console.WriteLine("Xal:" + ExamResult + " " + "Qiymet:E");
-            }
-            else if (ExamResult > 60 && ExamResult <= 70)
-            {
-                Console.WriteLine("Xal:" + ExamResult + " " + "Qiymet:D");
-            }
-            else if (ExamResult > 70 && ExamResult <= 80)
-            {
-                Console.WriteLine("Xal:" + ExamResult + " " + "Qiymet:C");
-            }
-            else if (ExamResult > 80 && ExamResult <= 90)
-            {
-                Console.WriteLine("Xal:" + ExamResult + " " + "Qiymet:B");
-            }
-            else
-            {
-                Console.WriteLine("Xal:" + ExamResult + " " + "Qiymet:A");
+                if (((i % 3) == 0) && ((i % 7) == 0))
+                {
+                    Console.WriteLine(i + " 7 ve 3-e bolunur.");
+                }
+                else if ((i % 7) == 0)
+                {
+                    Console.WriteLine(i + " 7-ye bolunur.");
+                }
+                else if ((i % 3) == 0)
+                {
+                    Console.WriteLine(i + " 3-e bolunur.");
+                }
             }
 
             Console.ReadLine();

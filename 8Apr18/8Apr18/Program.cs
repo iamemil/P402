@@ -10,47 +10,50 @@ namespace _8Apr18
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Eded daxil edin");
+            //Console.WriteLine("Eded daxil edin");
 
-            string input = Console.ReadLine();
+            //string input = Console.ReadLine();
 
-            int eded;
+            //int eded;
 
-            while (!int.TryParse(input, out eded))
-            {
-                Console.WriteLine("Ededi duzgun daxil edin:");
-                input = Console.ReadLine();
-            }
+            //while (!int.TryParse(input, out eded))
+            //{
+            //    Console.WriteLine("Ededi duzgun daxil edin:");
+            //    input = Console.ReadLine();
+            //}
 
-            Console.WriteLine(eded+" "+HeddFinder(eded)+" heddlidir ve ededleri ceminin heddleri nisbeti "+EdedDivider(eded)+" dur/dir.");
+            //Console.WriteLine(eded + " " + HeddFinder(eded) + " heddlidir ve ededleri ceminin heddleri nisbeti " + EdedDivider(eded) + " dur/dir.");
 
-            
+            Box box = new Box(4.4,2,5);
+            Console.WriteLine(box.Result);
+
+            Console.WriteLine();
         }
-        public static int HeddFinder(int a)
-        {
-            int length=0;
+        //public static int HeddFinder(int a)
+        //{
+        //    int length = 0;
 
-            while(a >= 1)
-            {               
-                a = a / 10;
-                length +=1;
-            }
-            return length;
-        }
+        //    while (a >= 1)
+        //    {
+        //        a = a / 10;
+        //        length += 1;
+        //    }
+        //    return length;
+        //}
 
-        public static int EdedDivider(int a)
-        {
-            int length = 0;
+        //public static int EdedDivider(int a)
+        //{
+        //    int length = 0;
 
-            int ededCemi = 0;
+        //    int ededCemi = 0;
 
-            while (a >= 1)
-            {
-                ededCemi += a % 10;
-                a = a / 10;
-                length += 1;
-            }
-            return ededCemi/length;
-        }
+        //    while (a >= 1)
+        //    {
+        //        ededCemi += a % 10;
+        //        a = a / 10;
+        //        length += 1;
+        //    }
+        //    return ededCemi / length;
+        //}
     }
 }
